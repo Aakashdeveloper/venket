@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hide</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*$("#show").click(function(){
+				$("div").show(1000);
+			});
+			$("#hide").click(function(){
+				$("div").hide(1000);
+			})*/
+			/*$("#toggle").click(function(){
+				$("div").toggle(1000);
+			})*/
+			/*$("#show").click(function(){
+				$("div").fadeIn(1000);
+			});
+			$("#hide").click(function(){
+				$("div").fadeOut(1000);
+			})*/
+
+			$("button").click(function(){
+				$("div").animate({left:'300px'})
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+     <button>Move</button>
+     <div style="height: 200px;width:200px;background-color:red;position: absolute;"></div>
+     <button id="toggle">Toggle</button>
+     <button id="show">Show</button>
+     <button id="hide">Hide</button>
+</body>
+</html>
